@@ -1,5 +1,5 @@
 import Layout from "../components/layouts/layout"
-import { Button } from "../components/styles/style"
+//import { Button } from "../components/styles/style"
 
 
 const IndexPage = () => {
@@ -7,7 +7,6 @@ const IndexPage = () => {
     <Layout>
       <div className="hero">
         <h1 className="title">Next.js + Tailwind CSS</h1>
-        <Button>BUTTON EXAMPLE</Button>
       </div>
     </Layout>
   )
