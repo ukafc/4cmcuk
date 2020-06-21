@@ -5,10 +5,10 @@ import { Button } from "../components/styles/style"
 const IndexPage = () => {
   return (
     <Layout>
-      <div className="hero">
-        <h1 className="title">Next.js + Tailwind CSS</h1>
+
+      <div className="flex flex-wrap justify-center mx-auto min-h-100">
+        Test website
       </div>
-      <Button>THIS IS BUTTONd</Button>
     </Layout>
   )
 }
