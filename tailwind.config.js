@@ -1,17 +1,18 @@
 module.exports = {
+  important: '#app',
   purge: {
     content: [
       './components/**/*.jsx', 
-      './pages/**/*.jsx',
-      'bootstrap/dist/css/bootstrap.css'
+      './pages/**/*.jsx'
     ],
-     // These options are passed through directly to PurgeCSS
-    enabled: true
   },
-  important: '#website',
-  //important: true,
   theme: {
     extend: {
+      screens: {
+        'ipadp': '1030px',
+        'xl': '1281px',
+        '2xl': '1441px',
+      },
       backgroundColor: {
         'highlight': '#00aeef',
         'afc': '#006489'
@@ -121,6 +122,7 @@ module.exports = {
         '40': '40vw',
         '50': '50vw',
         '60': '60vw',
+        '70': '70vw',
         '80': '80vw',
         '90': '90vw',
         '95': '95vw',

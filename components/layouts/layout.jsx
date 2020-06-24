@@ -1,10 +1,11 @@
 import Header from "./header"
 import Nav from './nav'
+import Footer from './footer'
 import { Helmet } from "react-helmet"
 
 const Layout = (props) => {
 	return (
-		<div id='website' className='high-specificity'>
+		<div id='app' className='high-specificity text-base w-full'>
 			<Helmet>
         <title>英国第四届差传大会</title>
         <meta name="description" content="英国第四届差传大会 (4CMCUK)" />
@@ -13,6 +14,7 @@ const Layout = (props) => {
 				<Header />
 				<Nav />
 				{props.children}
+				<Footer />
 		</div>
 	)
 }
