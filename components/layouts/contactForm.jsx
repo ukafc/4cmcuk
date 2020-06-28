@@ -23,14 +23,18 @@ class ContactForm extends React.Component {
     let email = this.state.email;
     if (!email) {
       alert("您需要输入邮箱！ Your must enter an email!");
+      return null
     }
+    let name = this.state.name ? ` - ${this.state.name}` : ``
+    let phone = this.state.phone ? ` (${this.state.phone})` : ``
+    window.open(`mailto:info@ukafc.org?subject=${this.state.subject}${name}${phone}&body=${this.state.message}${this.state.name}`)  
     
-    const { name, email, phone, subject, message } = this.state;
+    // const { name, email, phone, subject, message } = this.state;
 
-    axios.post('/', { name, email, phone, subject, message })
-      .then((result) => {
-        //access the results here....
-      });
+    // axios.post('/', { name, email, phone, subject, message })
+    //   .then((result) => {
+    //     //access the results here....
+    //   });
 
   }
 

@@ -14,10 +14,10 @@ const Contact = () => {
         <meta name="keywords" content="UKAFC, 使者协会, 差传大会, CMCUK" />
       </Helmet>
       <div className="flex flex-wrap justify-center pt-10 pb-20">
-        <div className='w-full flex justify-center'>或 &nbsp;<A href="mailto:info@ukafc.org">点击此处</A></div>
         <div className="w-full md:max-w-lg">
           <ContactForm />
         </div>
+        <div className='w-full flex justify-center'>如表格暂时不能使用， &nbsp;<A href="mailto:info@ukafc.org">点击此处</A></div>
       </div>
 
     </Layout>

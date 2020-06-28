@@ -3,7 +3,8 @@ module.exports = {
   purge: {
     content: [
       './components/**/*.jsx', 
-      './pages/**/*.jsx'
+      './pages/**/*.jsx',
+      './styles/**/*.css'
     ],
   },
   theme: {
