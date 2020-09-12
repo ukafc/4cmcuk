@@ -1,7 +1,7 @@
 import { NavButton, DropdownMenuBtn } from '../styles/style'
 import { ActiveLink } from '../styles/ActiveLink'
 import DropdownButton from './dropdownButton'
-import { DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+import { DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'; 
 
 const Nav = () => {
 	const activeClasses = "border-b-2 border-afc"
@@ -26,7 +26,7 @@ const Nav = () => {
           <ActiveLink href="/guide#sec6" activeClassName={activeClasses}><DropdownItem><DropdownMenuBtn>会场示图</DropdownMenuBtn></DropdownItem></ActiveLink>
         </DropdownMenu>
       </DropdownButton>
-      <DropdownButton>
+      {/* <DropdownButton>
         <DropdownToggle className={toggleClasses}>
           <ActiveLink href="/register" activeClassName={activeClasses}><NavButton>会议注册</NavButton></ActiveLink>
         </DropdownToggle>
@@ -34,7 +34,7 @@ const Nav = () => {
           <ActiveLink href="/register" activeClassName={activeClasses}><DropdownItem><DropdownMenuBtn>报名参加</DropdownMenuBtn></DropdownItem></ActiveLink>
           <ActiveLink href="/register#sec2" activeClassName={activeClasses}><DropdownItem><DropdownMenuBtn>交通住宿</DropdownMenuBtn></DropdownItem></ActiveLink>
         </DropdownMenu>
-      </DropdownButton>
+      </DropdownButton> */}
       <DropdownButton>
         <DropdownToggle className={toggleClasses}>
           <ActiveLink href="/schedule" activeClassName={activeClasses}><NavButton>大会议程</NavButton></ActiveLink>
@@ -56,7 +56,7 @@ const Nav = () => {
       </DropdownButton>
       <DropdownButton>
         <DropdownToggle className={toggleClasses}>
-          <ActiveLink href="/contact" activeClassName={activeClasses}><NavButton>联系我们</NavButton></ActiveLink>
+          <a href="https://ukafc.org/contact-us/" style={{color: 'black', textDecoration: 'none'}}><NavButton>联系我们</NavButton></a>
         </DropdownToggle>
       </DropdownButton>
     </div>

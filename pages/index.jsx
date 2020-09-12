@@ -4,6 +4,8 @@ import React from 'react'
 import { A, MyButton } from '../components/styles/style'
 
 const IndexPage = () => {
+  const docClasses = "flex justify-center items-center md:w-1/3 mx-3 py-2 mt-10 transform hover:-translate-y-1 transition duration-500 shadow-xs hover:shadow-2xl rounded-lg text-white"
+
   return (
     <Layout>
       <div className="flex flex-wrap justify-center min-h-90">
@@ -29,7 +31,7 @@ const IndexPage = () => {
           <div className="flex flex-wrap text-gray-800 mt-10 pb-20 justify-center w-full">
             <h1 className="w-full text-black text-center text-2xl mb-5">快速链接</h1>
               <A href='/guide#sec3' insite><MyButton>讲员介绍</MyButton></A>
-              <A href='https://goo.gl/forms/q8H4HPf1CvC6G4y32'><MyButton>在线报名表</MyButton></A>
+              {/* <A href='https://goo.gl/forms/q8H4HPf1CvC6G4y32'><MyButton>在线报名表</MyButton></A> */}
               <A href='/schedule#sec1' insite><MyButton>大会日程</MyButton></A>
               <A href='http://goo.gl/iVzyZ' insite><MyButton>祷告守望</MyButton></A>
               <A href='/guide#sec4' insite><MyButton>下一步 Next Step</MyButton></A>
@@ -39,13 +41,13 @@ const IndexPage = () => {
             <h1 className="w-full text-black text-center text-2xl"> 
               下载资料
             </h1>
-            <div className="flex justify-center items-center md:w-1/4 mx-3 px-5 py-2 mt-10 transform hover:-translate-y-6 transition duration-500 bg-gray-800 shadow-xs hover:shadow-2xl rounded-lg text-white">
+            <div className={`${docClasses} bg-gray-800 px-5`}>
               <a className='hover:text-gray-100 text-white' href='./files/CMC-2018-UK.jpg' target='_blank'>海报</a>
             </div>
-            <div className="flex justify-center items-center md:w-1/4 mx-3 px-8 py-2 mt-10 transform hover:-translate-y-6 transition duration-500 bg-gray-500 shadow-xs hover:shadow-2xl rounded-lg text-white">
+            <div className={`${docClasses} bg-gray-500 px-10`}>
               <a className='hover:text-gray-300 text-white' href='./files/2018recordings.pdf' target='_blank'>大会录音清单</a>
             </div>
-            <div className="flex justify-center items-center md:w-1/4 mx-3 px-5 py-2 mt-10 transform hover:-translate-y-6 transition duration-500 bg-white shadow-xs hover:shadow-2xl rounded-lg text-white">
+            <div className={`${docClasses} bg-white px-5`}>
               <a className='hover:text-gray-800 text-gray-600' href='./images/timetable.jpg' target='_blank'>日程安排</a>
             </div>
           </div>
